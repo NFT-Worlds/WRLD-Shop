@@ -1,0 +1,19 @@
+name: NFTWorldsShop
+version: 1.0
+author: jacob
+main: com.nftworlds.shop.Shop
+api-version: 1.17
+depend: [ Essentials, WRLDPaymentsAPI ]
+commands:
+  wrldbalance:
+    permission: nftworlds.balance
+    aliases: [ ewrldbalance, wrldbal, ewrldbal ]
+    usage: /wrldbalance
+  shop:
+    permission: nftworlds.shop
+    aliases: [ wrldshop ]
+    usage: /shop
+  paywrld:
+    permission: nftworlds.pay
+    aliases: [ epaywrld ]
+    usage: /paywrld

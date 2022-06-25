@@ -1,0 +1,357 @@
+lang:
+  not-online: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» <SOLID:ce203f>Player is not online"
+  invalid-amount: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» <SOLID:ce203f>Invalid amount"
+  pay-player-command: " \n<SOLID:ADF3FD>Pay %player% <SOLID:FDD136>%amount% $WRLD\n "
+  pay-player-command-error: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» <SOLID:ce203f>Not enough arguments (/paywrld <player> <amount> <reason>"
+  link-wallet: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» <SOLID:ce203f>Link your wallet at nftworlds.com/account"
+  wrld-balance: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» &f&lWRLD Balance:<SOLID:53ea18> %amount% $WRLD"
+  no-buy-wrld: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» <SOLID:ce203f>This item cannot be purchased using $WRLD."
+  no-buy-dollars: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» <SOLID:ce203f>This item cannot be purchased using $$$."
+  no-sell-wrld: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» <SOLID:ce203f>This item cannot be sold for $WRLD."
+  no-sell-dollars: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» <SOLID:ce203f>This item cannot be sold for $$$."
+  insufficient-funds: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» <SOLID:ce203f>You do not have enough money to buy this item."
+  purchased: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» <SOLID:53ea18>Purchased %amount%x %item%<SOLID:53ea18> for %dollar%%price% %wrld%"
+  no-inventory-space: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» <SOLID:ce203f>You do not have enough inventory space."
+  item-dropped: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» <SOLID:53ea18>You don't have enough inventory space! The item has been dropped next to you."
+  sold: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» <SOLID:53ea18>Sold %amount%x %item%<SOLID:53ea18> for %dollar%%price% %wrld%"
+  no-item-to-sell: "<SOLID:089ccc>&lN<SOLID:0ea2c9>&lF<SOLID:14a8c6>&lT<SOLID:1baec3>&lW<SOLID:21b4c0>&lo<SOLID:27babd>&lr<SOLID:2dc0ba>&ll<SOLID:34c6b6>&ld<SOLID:3accb3>&ls<SOLID:40d2b0>&l <SOLID:46d8ad>&lS<SOLID:4ddeaa>&lh<SOLID:53e4a7>&lo<SOLID:59eaa4>&lp &8» <SOLID:ce203f>You don't have any of this item to sell."
+  received-wrld: " \n<SOLID:5CFD76>You received <SOLID:61EAFD>%amount% $WRLD<SOLID:5CFD76> from %player% %for%<SOLID:BAFDE9> %reason%\n "
+  sent-wrld: " \n<SOLID:5CFD76>You sent <SOLID:61EAFD>%amount% $WRLD<SOLID:5CFD76> to %player% %for%<SOLID:BAFDE9> %reason%\n "
+  lore:
+    buy:
+      - "<SOLID:089ccc>● <SOLID:59eaa4>Ingame Price: &f%dollar%%amount% %wrld%"
+    buy-invalid:
+      - "<SOLID:089ccc>● <SOLID:59eaa4>&m$WRLD Price:&r &f&m%dollar%%amount% %wrld%"
+    buy-end:
+      - " "
+      - "<SOLID:53ea18>Left-Click&f to buy %amount%x"
+    sell:
+      - "<SOLID:089ccc>● <SOLID:59eaa4>Ingame Sell Price: &f%dollar%%amount% %wrld%"
+    sell-invalid:
+      - "<SOLID:089ccc>● <SOLID:59eaa4>&m$WRLD Sell Price:&r &f&m%dollar%%amount% %wrld%"
+    sell-end:
+      - " "
+      - "<SOLID:ce203f>Left-Click&f to sell %amount%x"
+      - "<SOLID:ce203f>Right-Click&f to sell all"
+
+
+# Compact Menus:
+# Items will only display if they fill both the transaction type and currency type specified.
+# For example, if an item can only be sold for $WRLD, it will only show up if Sell and $WRLD are selected.
+# If compact menus is false, the items will show only based on the transaction type. The currency type that
+# is currently selected will be shown (if it exists) and the other will be crossed out. Keeping this setting
+# as false may make it easier for players to search for items.
+compact-menus: false
+menu:
+  main-menu:
+    name: "&2&lServer Shop"
+    filler: BLACK_STAINED_GLASS_PANE
+    filler_buy: LIME_STAINED_GLASS_PANE
+    filler_sell: RED_STAINED_GLASS_PANE
+    use-categories: true
+    categories:
+      blocks:
+        item: END_STONE_BRICKS
+        slot: 20
+        display: "&8(<SOLID:26bf75>❖&8) <SOLID:59eaa4>&lBlocks Shop &8(<SOLID:26bf75>❖&8)"
+        lore:
+          - "&7 "
+          - "&7Purchase various exotic blocks in"
+          - "&7the blocks shop using ingame money"
+          - "&7or $WRLD!"
+          - "&7 "
+          - "<SOLID:59eaa4>&nClick&f to access this shop"
+      combat:
+        item: DIAMOND_SWORD
+        slot: 22
+        display: "&8(<SOLID:26bf75>❖&8) <SOLID:59eaa4>&lCombat Shop &8(<SOLID:26bf75>❖&8)"
+        lore:
+          - "&7 "
+          - "&7Purchase various tools and weapons"
+          - "&7in the weapons shop using ingame money"
+          - "&7or $WRLD!"
+          - "&7 "
+          - "<SOLID:59eaa4>&nClick&f to access this shop"
+      ranks:
+        item: MAGMA_CREAM
+        slot: 24
+        display: "&8(<SOLID:26bf75>❖&8) <SOLID:59eaa4>&lPlayer Ranks Shop &8(<SOLID:26bf75>❖&8)"
+        lore:
+          - "&7 "
+          - "&7Purchase ranks with $WRLD that will"
+          - "&7give you various different perks on"
+          - "&7the server!"
+          - "&7 "
+          - "<SOLID:59eaa4>&nClick&f to access this shop"
+      spawners:
+        item: SPAWNER
+        slot: 30
+        display: "&8(<SOLID:26bf75>❖&8) <SOLID:59eaa4>&lSpawner Shop &8(<SOLID:26bf75>❖&8)"
+        lore:
+          - "&7 "
+          - "&7Purchase spawners that will infinitely"
+          - "&7spawn that certain mob using ingame money"
+          - "&7or $WRLD!"
+          - "&7 "
+          - "<SOLID:59eaa4>&nClick&f to access this shop"
+      other:
+        item: CAKE
+        slot: 32
+        display: "&8(<SOLID:26bf75>❖&8) <SOLID:59eaa4>&lExotic Shop &8(<SOLID:26bf75>❖&8)"
+        lore:
+          - "&7 "
+          - "&7Purchase various random exotic items"
+          - "&7in the exotic shop using ingame money"
+          - "&7or $WRLD!"
+          - "&7 "
+          - "<SOLID:59eaa4>&nClick&f to access this shop"
+  shop:
+    previous:
+      item: PAPER
+      slot: 48
+      display: "<SOLID:ce203f>Previous"
+      lore: [ ]
+    main_menu:
+      item: BARRIER
+      slot: 49
+      display: "<SOLID:ce203f>&lBack"
+      lore:
+        - "&7Click on me to go back!"
+    next:
+      item: PAPER
+      slot: 50
+      display: "<SOLID:53ea18>Next"
+      lore: [ ]
+    toggle_buy:
+      item: LIME_DYE
+      slot: 35
+      display: "&fSwitch to <SOLID:53ea18>&lBuy&f mode"
+      lore: [ ]
+    toggle_sell:
+      item: RED_DYE
+      slot: 35
+      display: "&fSwitch to <SOLID:ce203f>&lSell&f mode"
+      lore: [ ]
+    toggle_wrld:
+      item: EMERALD
+      slot: 26
+      display: "&fSwitch to &e&l$WRLD&f currency"
+      lore: [ ]
+    toggle_ess:
+      item: SUNFLOWER
+      slot: 26
+      display: "&fSwitch to <SOLID:53ea18>&lIngame&f currency"
+      lore: [ ]
+    increase_amount:
+      item: LIME_CANDLE
+      slot: 18
+      display: "<SOLID:53ea18>Increase Bulk &8(<SOLID:53ea18>+&7%amount%x&8)"
+      lore: [ ]
+    decrease_amount:
+      item: RED_CANDLE
+      slot: 27
+      display: "<SOLID:ce203f>Decrease Bulk &8(<SOLID:ce203f>&l-&7%amount%x&8)"
+      lore: [ ]
+
+items:
+  dirt:
+    material: DIRT
+    display:
+      name: "&f&lDirt"
+      lore: [ ]
+    category: blocks
+    sell:
+      price: 1
+      wrld-price: 0
+    buy:
+      price: 2
+      wrld-price: 0.1
+  grass:
+    material: GRASS_BLOCK
+    display:
+      name: "&f&lGrass"
+    category: blocks
+    sell:
+      price: 1
+      wrld-price: 0
+    buy:
+      price: 2
+      wrld-price: 0.1
+  stone:
+    material: STONE
+    display:
+      name: "&f&lStone"
+    category: blocks
+    sell:
+      price: 2
+      wrld-price: 0
+    buy:
+      price: 4
+      wrld-price: 0.2
+  cobblestone:
+    material: COBBLESTONE
+    display:
+      name: "&f&lCobblestone"
+    category: blocks
+    sell:
+      price: 1
+      wrld-price: 0
+    buy:
+      price: 2
+      wrld-price: 0.1
+  diamond_sword_with_enchants:
+    material: DIAMOND_SWORD
+    display:
+      name: "&f&lDiamond Sword"
+      lore:
+        - "&7&oWield this powerful weapon in combat."
+      enchants:
+        - DAMAGE_ALL:5
+        - DURABILITY:4
+    item:
+      enchants:
+        - DAMAGE_ALL:5
+        - DURABILITY:4
+      lore:
+        - "&7&oExample lore."
+    category: combat
+    buy:
+      wrld-price: 5
+  gold_axe:
+    material: GOLDEN_AXE
+    display:
+      name: "&f&lGolden Axe"
+      enchants:
+        - DAMAGE_ALL:3
+        - DURABILITY:2
+    item:
+      enchants:
+        - DAMAGE_ALL:3
+        - DURABILITY:2
+    category: combat
+    buy:
+      wrld-price: 15
+  first_rank:
+    material: DIAMOND
+    display:
+      name: "&b&lRank 1"
+      lore:
+        - "&7&oFirst rank on the server"
+        - "&f- &7Grants access to x"
+        - "&f- &7Grants access to y"
+        - "&f- &7Grants access to z"
+    give-item: false
+    commands:
+      - "lp user %player% parent set rank1"
+    category: ranks
+    buy:
+      wrld-price: 20
+  second_rank:
+    material: EMERALD
+    display:
+      name: "&b&lRank 2"
+      lore:
+        - "&7&oFirst rank on the server"
+        - "&f- &7Grants access to x"
+        - "&f- &7Grants access to y"
+        - "&f- &7Grants access to z"
+    give-item: false
+    commands:
+      - "lp user %player% parent set rank2"
+    category: ranks
+    buy:
+      wrld-price: 35
+      price: 1000
+  zombie_spawner:
+    material: SPAWNER
+    spawner: ZOMBIE
+    display:
+      name: "&2&lZombie Spawner"
+    category: spawners
+    buy:
+      wrld-price: 100
+      price: 20000
+  iron_golem_spawner:
+    material: SPAWNER
+    spawner: IRON_GOLEM
+    display:
+      name: "&f&lIron Golem Spawner"
+    category: spawners
+    buy:
+      wrld-price: 200
+      price: 40000
+  speed_2_splash_potion:
+    material: SPLASH_POTION
+    potion:
+      splash: true
+      color: SPEED
+      effects:
+        - SPEED:2:90
+    display:
+      name: "&b&lSpeed 2 Splash Potion"
+    category: other
+    buy:
+      wrld-price: 5
+      price: 100
+  crazy_potion:
+    material: POTION
+    potion:
+      color: REGENERATION
+      effects:
+        - SPEED:2:300
+        - REGENERATION:5:500
+        - INCREASE_DAMAGE:3:300
+    display:
+      name: "&d&lCrazy Potion"
+    category: other
+    buy:
+      wrld-price: 20
+      price: 1000
+  sharpness_5_book:
+    material: ENCHANTED_BOOK
+    enchanted_book:
+      enchantments:
+        - SHARPNESS:5
+    display:
+      name: "&f&lSharpness V Book"
+    category: other
+    buy:
+      wrld-price: 10
+      price: 500
+  crazy_book:
+    material: ENCHANTED_BOOK
+    enchanted_book:
+      enchantments:
+        - SILK_TOUCH:1
+        - EFFICIENCY:5
+        - UNBREAKING:4
+    display:
+      name: "&f&lCrazy Book"
+    category: other
+    buy:
+      wrld-price: 100
+      price: 5000
+  poison_arrow:
+    material: TIPPED_ARROW
+    tipped_arrow:
+      color: POISON
+      effects:
+        - POISON:2:2
+    display:
+      name: "&2&lPoison Arrow"
+    category: other
+    buy:
+      wrld-price: 100
+      price: 5000
+  speed_arrow:
+    material: TIPPED_ARROW
+    tipped_arrow:
+      color: SPEED
+      effects:
+        - SPEED:2:10
+    display:
+      name: "&b&lSpeed Arrow"
+    category: other
+    buy:
+      wrld-price: 100
+      price: 5000
