@@ -50,103 +50,50 @@ public class ItemBuilder {
         if (!lore.isEmpty()) lore.add(" ");
         if (transactionType == TransactionType.BUY) {
             if (Shop.getInstance().getShopConfig().isCompactMenus()) {
-                for (String s : shopConfig.getLoreBuy()) {
+                for (String s : currencyType == CurrencyType.ESS ? shopConfig.getLoreBuyIngame() : shopConfig.getLoreBuyWRLD()) {
                     lore.add(ColorUtil.rgb(s
-                            .replace("%dollar%", currencyType == CurrencyType.ESS ? "$" : "")
                             .replace("%amount%", (currencyType == CurrencyType.WRLD ? shopItem.getBuyWRLD() * amount : shopItem.getBuyEss() * amount) + "")
-                            .replace("%wrld%", currencyType == CurrencyType.WRLD ? "$WRLD" : "")
                     ));
                 }
             } else {
                 if (shopItem.getBuyWRLD() != 0) {
-                    if (currencyType == CurrencyType.ESS) {
-                        for (String s : shopConfig.getLoreBuyInvalid()) {
-                            lore.add(ColorUtil.rgb(s
-                                    .replace("%dollar%", "")
-                                    .replace("%amount%", shopItem.getBuyWRLD() * amount + "")
-                                    .replace("%wrld%", "$WRLD")
-                            ));
-                        }
-                    } else {
-                        for (String s : shopConfig.getLoreBuy()) {
-                            lore.add(ColorUtil.rgb(s
-                                    .replace("%dollar%", "")
-                                    .replace("%amount%", shopItem.getBuyWRLD() * amount + "")
-                                    .replace("%wrld%", "$WRLD")
-                            ));
-                        }
+                    for (String s : currencyType == CurrencyType.ESS ? shopConfig.getLoreBuyWRLDInvalid() : shopConfig.getLoreBuyWRLD()) {
+                        lore.add(ColorUtil.rgb(s
+                                .replace("%amount%", shopItem.getBuyWRLD() * amount + "")
+                        ));
                     }
                 }
                 if (shopItem.getBuyEss() != 0) {
-                    if (currencyType == CurrencyType.WRLD) {
-                        for (String s : shopConfig.getLoreBuyInvalid()) {
-                            lore.add(ColorUtil.rgb(s
-                                    .replace("%dollar%", "$")
-                                    .replace("%amount%", shopItem.getBuyEss() * amount + "")
-                                    .replace("%wrld%", "")
-                            ));
-                        }
-                    } else {
-                        for (String s : shopConfig.getLoreBuy()) {
-                            lore.add(ColorUtil.rgb(s
-                                    .replace("%dollar%", "$")
-                                    .replace("%amount%", shopItem.getBuyEss() * amount + "")
-                                    .replace("%wrld%", "")
-                            ));
-                        }
+                    for (String s : currencyType == CurrencyType.WRLD ? shopConfig.getLoreBuyIngameInvalid() : shopConfig.getLoreBuyIngame()) {
+                        lore.add(ColorUtil.rgb(s
+                                .replace("%amount%", shopItem.getBuyEss() * amount + "")
+                        ));
                     }
                 }
-
                 for (String s : shopConfig.getLoreBuyEnd()) {
                     lore.add(ColorUtil.rgb(s.replace("%amount%", amount + "")));
                 }
             }
         } else {
             if (Shop.getInstance().getShopConfig().isCompactMenus()) {
-                for (String s : shopConfig.getLoreSell()) {
+                for (String s : currencyType == CurrencyType.ESS ? shopConfig.getLoreSellIngame() : shopConfig.getLoreSellWRLD()) {
                     lore.add(ColorUtil.rgb(s
-                            .replace("%dollar%", currencyType == CurrencyType.ESS ? "$" : "")
                             .replace("%amount%", (currencyType == CurrencyType.WRLD ? shopItem.getSellWRLD() * amount : shopItem.getSellEss() * amount) + "")
-                            .replace("%wrld%", currencyType == CurrencyType.WRLD ? "$WRLD" : "")
                     ));
                 }
             } else {
                 if (shopItem.getSellWRLD() != 0) {
-                    if (currencyType == CurrencyType.ESS) {
-                        for (String s : shopConfig.getLoreSellInvalid()) {
-                            lore.add(ColorUtil.rgb(s
-                                    .replace("%dollar%", "")
-                                    .replace("%amount%", shopItem.getSellWRLD() * amount + "")
-                                    .replace("%wrld%", "$WRLD")
-                            ));
-                        }
-                    } else {
-                        for (String s : shopConfig.getLoreSell()) {
-                            lore.add(ColorUtil.rgb(s
-                                    .replace("%dollar%", "")
-                                    .replace("%amount%", shopItem.getSellWRLD() * amount + "")
-                                    .replace("%wrld%", "$WRLD")
-                            ));
-                        }
+                    for (String s : currencyType == CurrencyType.ESS ? shopConfig.getLoreSellWRLDInvalid() : shopConfig.getLoreSellWRLD()) {
+                        lore.add(ColorUtil.rgb(s
+                                .replace("%amount%", shopItem.getSellWRLD() * amount + "")
+                        ));
                     }
                 }
                 if (shopItem.getSellEss() != 0) {
-                    if (currencyType == CurrencyType.WRLD) {
-                        for (String s : shopConfig.getLoreSellInvalid()) {
-                            lore.add(ColorUtil.rgb(s
-                                    .replace("%dollar%", "$")
-                                    .replace("%amount%", shopItem.getSellEss() * amount + "")
-                                    .replace("%wrld%", "")
-                            ));
-                        }
-                    } else {
-                        for (String s : shopConfig.getLoreSell()) {
-                            lore.add(ColorUtil.rgb(s
-                                    .replace("%dollar%", "$")
-                                    .replace("%amount%", shopItem.getSellEss() * amount + "")
-                                    .replace("%wrld%", "")
-                            ));
-                        }
+                    for (String s : currencyType == CurrencyType.WRLD ? shopConfig.getLoreSellIngameInvalid() : shopConfig.getLoreSellIngame()) {
+                        lore.add(ColorUtil.rgb(s
+                                .replace("%amount%", shopItem.getSellEss() * amount + "")
+                        ));
                     }
                 }
             }

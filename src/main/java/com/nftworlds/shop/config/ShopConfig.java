@@ -50,11 +50,15 @@ public class ShopConfig {
     private String receivedWRLD;
     private String sentWRLD;
 
-    private List<String> loreBuy;
-    private List<String> loreBuyInvalid;
+    private List<String> loreBuyIngame;
+    private List<String> loreBuyIngameInvalid;
+    private List<String> loreBuyWRLD;
+    private List<String> loreBuyWRLDInvalid;
     private List<String> loreBuyEnd;
-    private List<String> loreSell;
-    private List<String> loreSellInvalid;
+    private List<String> loreSellIngame;
+    private List<String> loreSellIngameInvalid;
+    private List<String> loreSellWRLD;
+    private List<String> loreSellWRLDInvalid;
     private List<String> loreSellEnd;
 
     public ShopConfig() {
@@ -87,11 +91,15 @@ public class ShopConfig {
         receivedWRLD = config.getString("lang.received-wrld");
         sentWRLD = config.getString("lang.sent-wrld");
 
-        loreBuy = config.getStringList("lang.lore.buy");
-        loreBuyInvalid = config.getStringList("lang.lore.buy-invalid");
+        loreBuyIngame = config.getStringList("lang.lore.buy-ingame");
+        loreBuyIngameInvalid = config.getStringList("lang.lore.buy-ingame-invalid");
+        loreBuyWRLD = config.getStringList("lang.lore.buy-wrld");
+        loreBuyWRLDInvalid = config.getStringList("lang.lore.buy-wrld-invalid");
         loreBuyEnd = config.getStringList("lang.lore.buy-end");
-        loreSell = config.getStringList("lang.lore.sell");
-        loreSellInvalid = config.getStringList("lang.lore.sell-invalid");
+        loreSellIngame = config.getStringList("lang.lore.sell-ingame");
+        loreSellIngameInvalid = config.getStringList("lang.lore.sell-ingame-invalid");
+        loreSellWRLD = config.getStringList("lang.lore.sell-wrld");
+        loreSellWRLDInvalid = config.getStringList("lang.lore.sell-wrld-invalid");
         loreSellEnd = config.getStringList("lang.lore.sell-end");
 
         compactMenus = config.getBoolean("compact-menus");

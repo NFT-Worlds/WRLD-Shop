@@ -18,17 +18,25 @@ lang:
   received-wrld: " \n<SOLID:5CFD76>You received <SOLID:61EAFD>%amount% $WRLD<SOLID:5CFD76> from %player% %for%<SOLID:BAFDE9> %reason%\n "
   sent-wrld: " \n<SOLID:5CFD76>You sent <SOLID:61EAFD>%amount% $WRLD<SOLID:5CFD76> to %player% %for%<SOLID:BAFDE9> %reason%\n "
   lore:
-    buy:
-      - "<SOLID:089ccc>● <SOLID:59eaa4>Ingame Price: &f%dollar%%amount% %wrld%"
-    buy-invalid:
-      - "<SOLID:089ccc>● <SOLID:59eaa4>&m$WRLD Price:&r &f&m%dollar%%amount% %wrld%"
+    buy-ingame:
+      - "<SOLID:089ccc>● <SOLID:59eaa4>Ingame Price: &f$%amount%"
+    buy-ingame-invalid:
+      - "<SOLID:089ccc>● <SOLID:59eaa4>&mIngame Price:&r &f&m$%amount%"
+    buy-wrld:
+      - "<SOLID:089ccc>● <SOLID:59eaa4>$WRLD Price: &f%amount% $WRLD"
+    buy-wrld-invalid:
+      - "<SOLID:089ccc>● <SOLID:59eaa4>&m$WRLD Price:&r &f&m%amount% $WRLD"
     buy-end:
       - " "
       - "<SOLID:53ea18>Left-Click&f to buy %amount%x"
-    sell:
-      - "<SOLID:089ccc>● <SOLID:59eaa4>Ingame Sell Price: &f%dollar%%amount% %wrld%"
-    sell-invalid:
-      - "<SOLID:089ccc>● <SOLID:59eaa4>&m$WRLD Sell Price:&r &f&m%dollar%%amount% %wrld%"
+    sell-ingame:
+      - "<SOLID:089ccc>● <SOLID:59eaa4>Ingame Sell Price: &f$%amount%"
+    sell-ingame-invalid:
+      - "<SOLID:089ccc>● <SOLID:59eaa4>&mIngame Sell Price:&r &f&m$%amount%"
+    sell-wrld:
+      - "<SOLID:089ccc>● <SOLID:59eaa4>$WRLD Sell Price: &f%amount% $WRLD"
+    sell-wrld-invalid:
+      - "<SOLID:089ccc>● <SOLID:59eaa4>&m$WRLD Sell Price:&r &f&m%amount% $WRLD"
     sell-end:
       - " "
       - "<SOLID:ce203f>Left-Click&f to sell %amount%x"
